@@ -4,12 +4,13 @@ import (
 	"encoding/json"
 	"testing"
 
+	jgfile "github.com/Jinglever/go-file"
 	"github.com/bmizerany/assert"
 )
 
 func TestReadCSVFile(t *testing.T) {
-	file := "_test_data/test.csv"
-	data, err := ReadCSVFile(file)
+	file := "_data/test.csv"
+	data, err := jgfile.ReadCSVFile(file)
 	if err != nil {
 		t.Fatal(err)
 	}
