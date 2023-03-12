@@ -1,4 +1,4 @@
-package jgfile
+package jgfile_test
 
 import (
 	"encoding/json"
